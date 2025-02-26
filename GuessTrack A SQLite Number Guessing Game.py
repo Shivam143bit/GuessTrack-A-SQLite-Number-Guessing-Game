@@ -16,7 +16,7 @@ def create_table():
                     )''')
     conn.commit()
     conn.close()
-
+    
 def insert_game_data(username, system_numbers, user_attempts, total_score):
     """Inserts a new game session into the database."""
     conn = sqlite3.connect("game_data.db")
